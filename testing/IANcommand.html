@@ -1,0 +1,51 @@
+pwd / clear / cd / list / dir / mkdir / ls
+
+git config --global user.email "ian.dong@mater.org.au"
+git config --global user.name "iandong21"
+
+
+cd d:/
+cd ..
+
+git branch -a
+git clone https://github.com/iandong21/github-slideshow.git
+git branch ian-local-slide
+git branch --all
+git push --set-upstream origin ian-local-slide  (creating branch)
+
+git push origin --delete my-slide (delete remote branchgi)
+git branch -D my-slide (delete local branch)
+
+
+git checkout my-slide
+git status
+
+git touch _posts/0000-01-02-iandong21.md 
+git add _posts/0000-01-02-iandong21.md  (staging a file)
+git commit -m "Hi Ian first commited from homePC"
+git push
+
+
+==Kentico MVC===
+git clone http://github.com/Kentico/training-kentico-k12
+
+$ git config --global http.proxy https://75022:****@mvspfpxy01.mater.org.au:8080
+$ git config --global http.proxy http://75022:*****@mvspfpxy01.mater.org.au:8080
+$ git config --global http.proxy https://75022:****@mvspfpxy02.mater.org.au:8080
+$ git config --global http.proxy http://75022:****@mvspfpxy02.mater.org.au:8080
+$ git config --global http.proxy https://75022:*****@172.21.22.30:8080
+$ git config --global http.proxy http://75022:******@172.21.22.30:8080
+$  git config --global http.proxy http://mvspfpxy01.mater.org.au:8080  (without login)
+
+Something like:
+set http_proxy=http://username:password@proxydomain:port
+set https_proxy=http://username:password@proxydomain:port
+set no_proxy=localhost,.my.company 
+
+Mater Proxy Details:
+Content Gateway Node 1: mvspfpxy01.mater.org.au       172.21.22.30
+Content Gateway Node 2: mvspfpxy02.mater.org.au       172.21.22.31
+Port:  8080
+
+Regards,
+Paul
